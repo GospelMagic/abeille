@@ -1,0 +1,279 @@
+body {
+  background-color: #fadc4e;
+}
+
+header, footer {
+  background-color: black;
+  min-height: 15vh;
+}
+
+header a, footer a {
+  color: white;
+}
+
+footer {
+  color: white
+}
+
+article {
+  min-height: 70vh;
+}
+
+video {
+  max-height: auto;
+}
+
+/* home page/index.html */
+@keyframes appearIN {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(50px, 0px);
+  }
+
+  100% {
+    transform: translate(-1000px, 0px);
+  }
+}
+
+.parent-home {
+  display: block;
+
+}
+
+.main-menu li {
+  position: relative;
+  display: inline-block;
+  padding: 0 5vh;
+  margin: 2px solid;
+  justify-content: center;
+}
+
+.main-menu {
+  padding: 30px;
+  display: grid;
+  justify-content: end;
+  align-items: space-evenly;
+  max-width: 100%;
+}
+
+.footer-menu {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.parent-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.parent-home2 li {
+  padding: 10vh;
+  color: black;
+}
+
+.parent-home2 {
+  text-align: center;
+  color: black;
+}
+
+.titre-home {
+  transition: 1s all linear;
+
+}
+
+/* étape 1 */
+@@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.etape1-parent, h1 {
+  animation-duration: 10s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  transition: 2s
+}
+
+
+.etape1-video {
+  display: flex;
+  max-height: 300px;
+  justify-content: center;
+}
+
+.change-texte, p {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-bee {
+  display: flex;
+  align-items: center;
+  max-height: auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.content video {
+  display: block;
+  flex-basis: 640px;
+  padding: 2em;
+
+}
+
+.content p {
+  flex-basis: 640px;
+  padding: 2em;
+}
+
+.content-texte p {
+  display: block;
+  flex-wrap: wrap;
+  background-color: ;
+  flex-basis: 640px;
+  padding: 2em;
+}
+
+
+
+.etape1-parent {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.etape1-enfant1 {
+  display: block;
+}
+
+/*étape 2*/
+
+@keyframes appearIN {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+
+  100% {
+    transform: translateX(100px) translateY(100px);
+  }
+}
+
+
+
+.titre-etape2 {
+  animation-duration: 2s;
+  animation-name: appearIN;
+  animation-iteration-count: infinite;
+}
+
+.petit-titre-etape2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  max-width: 300px;
+}
+
+.colonne {
+  display: block;
+  column-count: 3;
+}
+
+.colonne p {
+  font-size: 12px;
+}
+
+.colonne video {
+  display: flex;
+}
+
+/* étape 3*/
+
+@keyframes translate {
+  0% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+
+  80% {
+    transform: translateY(100px);
+    opacity: 20%;
+  }
+
+  100% {
+    transform: translateY(500px);
+    opacity: 0%;
+  }
+}
+
+.titre-etape3 {
+  display: grid;
+  justify-content: center;
+  animation-duration: 1.5s;
+  animation-name: translate;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  background-image: url("images/bees.jpg");
+  background-origin: padding-box;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  position: relative;
+}
+
+.change-text {
+  border: 1px solid red;
+  padding: 2em;
+  max-width: 800px;
+  font-size: 1em;
+  position: relative;
+}
+
+
+
+.change-text:hover {
+  opacity: 0;
+  font-size: 0.1em;
+}
+
+
+@keyframes transform {
+  0% {
+    transform: scaleX(1000px)scaleY(0px);
+  }
+
+  50% {
+    transform: scaleX(2000px)scaleY(0px);
+  }
+
+  100% {
+    transform: scaleX(3000px)scaleY(0px);
+  }
+}
+
+a {
+  text-decoration: none;
+}
